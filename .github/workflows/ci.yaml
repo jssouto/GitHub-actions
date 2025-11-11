@@ -1,0 +1,18 @@
+name: Ejemplo básico
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Mensaje de prueba
+        run: echo "Primera action en toda mi vida!"
