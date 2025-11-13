@@ -21,7 +21,7 @@ jobs:
           echo "Dependencias instaladas"
 
       - name: Ejecutar tests
-        run: pytest -v app/
+        run: PYTHONPATH=. pytest -v app/
   
   build_and_push:
     runs-on: ubuntu-latest
