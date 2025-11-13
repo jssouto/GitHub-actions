@@ -16,7 +16,7 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: 
+        run: |
           pip install pytest
           pip install -e .
           echo "Dependencias instaladas"
