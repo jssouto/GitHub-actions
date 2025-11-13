@@ -1,2 +1,5 @@
-print("Hola, mundo!")
-print("¡Bienvenido a la aplicación principal!")
+def saludo():
+    print(f"Hola Jorge")
+
+if __name__ == "__main__":
+    saludo()
