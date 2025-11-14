@@ -44,6 +44,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: miapp:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/actions:latest
 
     
