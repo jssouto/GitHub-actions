@@ -15,12 +15,12 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: registry.gitlab.com
-          username: ${{ secrets.GIT_USERNAME }}
-          password: ${{ secrets.GIT_PASSWORD }}
+          username: ${{ secrets.GITLAB_USERNAME }}
+          password: ${{ secrets.GITLAB_PASSWORD }}
 
       - name: Build & push image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: registry.gitlab.com/jssouto-group/jssouto-project/miapp:latest
+          tags: registry.gitlab.com/jssouto21-group/jssouto21-project/miapp:latest
